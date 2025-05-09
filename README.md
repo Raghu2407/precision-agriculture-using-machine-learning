@@ -1,46 +1,141 @@
-# Precision Agriculture using Machine Learning and IOT
 
-## DATA SOURCE 📊
-- [Crop recommendation dataset ](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset) (custom built dataset)
-- [Fertilizer suggestion dataset](https://github.com/Gladiator07/Harvestify/blob/master/Data-processed/fertilizer.csv) (custom built dataset)
-- [Disease detection dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
+# 🌾 Precision Agriculture using Machine Learning and IoT
 
-## MOTIVATION 💪
-Farming is one of the major sectors that influences a country’s economic growth.
+![Python](https://img.shields.io/badge/python-3.8--3.10-blue)
+![Platform](https://img.shields.io/badge/platform-Web-green)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
 
- -  In country like India, majority of the population is dependent on agriculture for their livelihood. Many new technologies, such as Machine Learning and Deep Learning, are being implemented into agriculture so that it is easier for farmers to grow and maximize their yield.
+---
 
- -   In this project, I present a website in which the following applications are implemented; Crop recommendation, Fertilizer recommendation and Plant disease prediction, respectively.
+## 📊 Data Sources
 
- -  In the crop recommendation application, the user can provide the soil data from their side and the application will predict which crop should the user grow.
+- [Crop Recommendation Dataset](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset)  
+- [Fertilizer Suggestion Dataset](https://github.com/Gladiator07/Harvestify/blob/master/Data-processed/fertilizer.csv)  
+- [Plant Disease Detection Dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
 
-  -   For the fertilizer recommendation application, the user can input the soil data and the type of crop they are growing, and the application will predict what the soil lacks or has excess of and will recommend improvements.
+---
 
-  -   For the last application, that is the plant disease prediction application, the user can input an image of a diseased plant leaf, and the application will predict what disease it is and will also give a little background about the disease and suggestions to cure it.
+## 💡 Motivation
 
-  
-## Contributors:
+Agriculture is a key driver of economic growth, especially in countries like India where a large portion of the population relies on it.
 
--[Atharva Labhasetwar](https://www.linkedin.com/in/atharva-labhasetwar)
+This project leverages **Machine Learning**, **Deep Learning**, and **IoT** to help farmers increase yield and sustainability by offering:
+- 🌾 Crop Recommendation
+- 💊 Fertilizer Suggestion
+- 🍂 Plant Disease Detection
 
--[Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739/)
+---
 
--[Kundan Patil](https://www.linkedin.com/in/kundan-patil-638979199)
+## 🌱 Features
 
+### 🌾 Crop Recommendation
+- Input: N-P-K values, state, and city.
+- Output: Suggests the most suitable crop.
+- Uses real-time temperature and humidity data.
+> 💡 Use common city names due to limitations in the weather API.
 
-## Home Page of our WebApplication
-![Home Page of our WebApplication](https://github.com/atharval1/precision-agriculture-using-machine-learning/blob/main/Project-docs/App-snaps/Home.png)
+---
 
+### 💊 Fertilizer Recommendation
+- Input: Soil N-P-K values and desired crop.
+- Output: Detects nutrient deficiencies or excess and recommends suitable fertilizers.
 
-## How to use 💻
-- Crop Recommendation system ==> enter the corresponding nutrient values of your soil, state and city. Note that, the N-P-K (Nitrogen-Phosphorous-Pottasium) values to be entered should be the ratio between them. Refer this website for more information. Note: When you enter the city name, make sure to enter mostly common city names. Remote cities/towns may not be available in the Weather API from where humidity, temperature data is fetched.
+---
 
-- Fertilizer suggestion system ==> Enter the nutrient contents of your soil and the crop you want to grow. The algorithm will tell which nutrient the soil has excess of or lacks. Accordingly, it will give suggestions for buying fertilizers.
+### 🍂 Plant Disease Detection
+- Input: Image of a plant leaf.
+- Output: Identifies crop type, disease (if any), and treatment options.
+> ⚠️ Currently supports a limited set of crops.
 
-- Disease Detection System ==> Upload an image of leaf of your plant. The algorithm will tell the crop type and whether it is diseased or healthy. If it is diseased, it will tell you the cause of the disease and suggest you how to prevent/cure the disease accordingly. Note that, for now it only supports few crops.
+---
 
-##How to Run project
-- please check my youtube link https://youtu.be/kU0nf-rzusE
-- https://www.youtube.com/watch?v=eJ-KytG2H5w&t=36s
+## 🖼️ Home Page
 
+![Home Page](https://github.com/atharval1/precision-agriculture-using-machine-learning/blob/main/Project-docs/App-snaps/Home.png)
 
+---
+
+## 🧪 How to Use
+
+### ➤ Crop Recommendation
+1. Enter N-P-K values, state, and city.
+2. Click **Submit**.
+3. View the recommended crop for your region and soil.
+
+### ➤ Fertilizer Suggestion
+1. Enter soil N-P-K levels and crop type.
+2. Get fertilizer advice based on nutrient imbalances.
+
+### ➤ Disease Detection
+1. Upload a clear image of a plant leaf.
+2. The model predicts:
+   - Crop type
+   - Health status
+   - Disease name (if any)
+   - Remedies
+
+---
+
+## 🛠️ Installation Guide
+
+### ✅ Requirements
+- Python **3.8 to 3.10**  
+  ⚠️ Newer versions may not be compatible.
+
+### 🔧 Setup Instructions
+
+#### 1. Clone the Repository
+
+```bash
+git clone <your-repo-url>
+cd <project-folder>
+```
+
+#### 2. Create a Virtual Environment
+
+**On Windows:**
+```bash
+python-m venv venv
+.env\Scriptsctivate
+```
+
+**On macOS/Linux:**
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
+#### 3. Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🎥 Demo Videos
+
+- [YouTube Demo 1](https://youtu.be/kU0nf-rzusE)  
+- [YouTube Demo 2](https://www.youtube.com/watch?v=eJ-KytG2H5w&t=36s)
+
+---
+
+## 👨‍💻 Contributors
+
+- [Atharva Labhasetwar](https://www.linkedin.com/in/atharva-labhasetwar)  
+- [Venkata Narayana Bommanaboina](https://www.linkedin.com/in/bvnarayana515739/)  
+- [Kundan Patil](https://www.linkedin.com/in/kundan-patil-638979199)
+
+---
+
+## 🧾 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 📌 Notes
+
+- Use a stable internet connection to fetch real-time weather data.
+- Ensure that uploaded images are clear and in-focus for best disease detection results.
+- Always cross-check fertilizer recommendations with agricultural guidelines for your region.
